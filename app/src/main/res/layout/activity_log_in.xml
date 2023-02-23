@@ -39,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:textColor="@color/white"
                 android:layout_below="@+id/profile_image"
                 android:textSize="40dp"
                 android:gravity="center"
