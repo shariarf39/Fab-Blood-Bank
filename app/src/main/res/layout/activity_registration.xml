@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#E1DC1F1F"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--text view for heading-->
+            <TextView
+                android:id="@+id/idTVHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Welcome \nBlood Register Form"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableLeft="@android:drawable/btn_star"
+                />
+
+            <!--edit text for user name-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/idTVHeader"
+                android:id="@+id/t3"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+
+                android:background="#00000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+                <EditText
+                    android:id="@+id/idEdtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Enter Full Name"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@android:drawable/btn_star"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--edit text for user id-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/t4"
+                android:layout_width="match_parent"
+                android:layout_below="@id/t3"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+
+                android:background="#00000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+                <EditText
+                    android:id="@+id/nubid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Address"
+                    android:inputType="date"
+
+                    android:drawableLeft="@android:drawable/ic_menu_edit"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/t5"
+                android:layout_width="match_parent"
+                android:layout_below="@id/t4"
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+
+                android:background="#00000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+                <EditText
+                    android:id="@+id/nubemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nubid"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Enter E-mail"
+
+                    android:drawableLeft="@android:drawable/ic_menu_edit"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--edit text for user password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/t1"
+                android:layout_width="match_parent"
+                android:layout_below="@id/t5"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:background="#00000000"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+
+
+
+                <EditText
+                    android:id="@+id/idEdtPassword"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Enter Password"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--button to register our new user-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/t2"
+                android:layout_width="match_parent"
+                android:layout_below="@id/t1"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+                android:background="#00000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+                <EditText
+                    android:id="@+id/idEdtConfromPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Confirm Password"
+                    android:inputType="textPassword"
+                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--button to register our new user-->
+            <Button
+                android:id="@+id/idBtnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="Register User"
+                android:textAllCaps="false"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/respros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,9 +1,200 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Log_in">
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:background="#E1DC1F1F"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/plash_logo"
+
+                />
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_below="@+id/profile_image"
+                android:textSize="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/e1"
+                android:layout_below="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="6dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:padding="5dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nub_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textEmailAddress"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+
+                    android:textColorHint="#F5000000"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+
+
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/e2"
+                android:layout_below="@+id/e1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Password"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                app:passwordToggleEnabled="true"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:padding="5dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nub_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="textWebPassword"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+
+                    android:textSize="25dp"
+                    android:textColorHint="#F5000000"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+
+
+                    >
+
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:layout_below="@+id/e2"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                />
+
+
+            <soup.neumorphism.NeumorphButton
+                android:layout_below="@+id/progress"
+                android:id="@+id/login_button"
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:text="LOGIN"
+                android:backgroundTint="#1EE91E63"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+
+                android:layout_weight="1"
+
+
+                />
+
+
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login_button"
+                android:layout_marginTop="46dp"
+                android:layout_marginBottom="5dp"
+                android:text="Not Register?Create Account"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+
+                android:layout_below="@+id/forgot_password"
+
+
+                />
+
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
