@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">Fab Red</string>
+
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+
+    </string-array>
+
+
+    <string-array name="division_name">
+        <item>Dhaka</item>
+        <item>Barishal</item>
+        <item>Chattogram</item>
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Rangpur</item>
+        <item>Mymensingh</item>
+        <item>Sylhet</item>
+
+    </string-array>    <string-array name="sex">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Custoom</item>
+
+
+    </string-array>
 </resources>

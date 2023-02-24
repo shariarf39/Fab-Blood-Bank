@@ -19,6 +19,7 @@
 
       />
     <TextView
+        android:id="@+id/t1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -28,6 +29,18 @@
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Donate Blood, Save life"
+        android:textSize="25dp"
+        android:layout_below="@+id/t1"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#8D000000"
         android:textStyle="bold"
         />
 

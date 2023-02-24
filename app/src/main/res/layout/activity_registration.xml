@@ -84,7 +84,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="10dp"
-                    android:hint="      Address"
+                    android:hint="      Enter Contact Number"
                     android:inputType="date"
 
                     android:drawableLeft="@android:drawable/ic_menu_edit"/>
@@ -115,11 +115,38 @@
 
                     android:drawableLeft="@android:drawable/ic_menu_edit"/>
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_below="@id/t5"
+                android:id="@+id/t6"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+
+                android:background="#00000000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="      Enter Address"
+                    android:inputType="textEmailAddress"
+                    android:drawableLeft="@android:drawable/btn_star"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
             <!--edit text for user password-->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/t1"
                 android:layout_width="match_parent"
-                android:layout_below="@id/t5"
+                android:layout_below="@id/sinpper"
                 android:layout_height="wrap_content"
                 app:passwordToggleEnabled="true"
                 android:background="#00000000"
@@ -143,6 +170,70 @@
                     android:hint="      Enter Password"
                     android:inputType="textPassword"
                     android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/sinpper"
+                android:layout_width="match_parent"
+                android:layout_below="@id/t6"
+                android:layout_height="80dp"
+
+                android:background="#00000000"
+                app:boxStrokeColor="#4A000000"
+                app:hintTextColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                >
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="vertical"
+                android:weightSum="3"
+                android:background="#45FFFFFF"
+                android:layout_margin="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Option: "
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="#E1DC1F1F"
+
+                    >
+
+                <Spinner
+                    android:id="@+id/bloodgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    />
+                <Spinner
+                    android:id="@+id/sex_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    />
+                <Spinner
+                    android:id="@+id/devison"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+            </LinearLayout>
             </com.google.android.material.textfield.TextInputLayout>
 
 
