@@ -207,7 +207,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:background="#E1DC1F1F"
+                    android:background="#BEDC1F1F"
 
                     >
 
