@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Fab Red</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 
     <string-array name="blood_group">
         <item>A+</item>

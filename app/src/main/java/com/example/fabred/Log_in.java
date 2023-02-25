@@ -85,6 +85,15 @@ public class Log_in extends AppCompatActivity {
         // checkBox = findViewById(R.id.checkbox);
         progressBar = findViewById(R.id.progress);
 
+        //////////////
+
+        sharedPreferences = getSharedPreferences("Fab_Red", Context.MODE_PRIVATE);
+        editor= sharedPreferences.edit();
+        if (sharedPreferences.contains("NUB_ID") && sharedPreferences.contains("NUB_PASS")){
+            Intent intent = new Intent(Log_in.this, Home.class);
+            startActivity(intent);
+        }
+
 
         ///---------------------Login
 
@@ -167,6 +176,13 @@ public class Log_in extends AppCompatActivity {
                                 if (admins.equals(jsonObject.getString("email")) && passw.equals(jsonObject.getString("password"))){
                                     //    if (passw.equals(jsonObject.getString("password"))){
 
+
+                                    editor.putString("NUB_ID",admins);
+                                    editor.putString("NUB_PASS", passw);
+                                    editor.commit();
+
+
+
                                     progressBar.setVisibility(View.GONE);
 
                                     Toast.makeText(Log_in.this, "Welcome", Toast.LENGTH_SHORT).show();
@@ -178,7 +194,7 @@ public class Log_in extends AppCompatActivity {
 
                                 }else{
                                     progressBar.setVisibility(View.GONE);
-                                    Toast.makeText(Log_in.this, "Your E-mail Password Wrong", Toast.LENGTH_SHORT).show();
+                             //       Toast.makeText(Log_in.this, "Your E-mail Password Wrong", Toast.LENGTH_SHORT).show();
                                 }
 
 
