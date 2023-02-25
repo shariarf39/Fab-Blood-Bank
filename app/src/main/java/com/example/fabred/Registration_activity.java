@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -174,7 +175,8 @@ public class Registration_activity extends AppCompatActivity {
                         progressBar.setVisibility(View.GONE);
 
                         Toast.makeText(Registration_activity.this, "Registration Done", Toast.LENGTH_SHORT).show();
-
+                        Intent intent = new Intent(Registration_activity.this, Log_in.class);
+                        startActivity(intent);
 
 
                     }
