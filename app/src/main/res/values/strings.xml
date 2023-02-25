@@ -24,7 +24,8 @@
         <item>Mymensingh</item>
         <item>Sylhet</item>
 
-    </string-array>    <string-array name="sex">
+    </string-array>
+    <string-array name="sex">
         <item>Male</item>
         <item>Female</item>
         <item>Custoom</item>
