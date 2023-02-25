@@ -48,6 +48,46 @@
                 android:layout_height="wrap_content"
                 android:text="plan"
                 android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/bl_email"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/bl_address"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/bl_group"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/bl_sex"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/bl_division"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="plan"
+                android:textSize="15sp"/>
+
+
+
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="2dp"
