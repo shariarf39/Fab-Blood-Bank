@@ -38,16 +38,53 @@
                 android:layout_height="wrap_content"
                 android:text="User Name"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="25sp"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/tvplan"
+                android:id="@+id/bl_group"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="plan"
-                android:textSize="15sp"/>
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+            <TextView
+
+                android:id="@+id/tvplan"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="20sp"/>
+
+
+                <ImageView
+                    android:id="@+id/call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_call_24"
+                    android:paddingRight="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    />
+                </RelativeLayout>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/bl_email"
@@ -55,35 +92,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="plan"
-                android:textSize="15sp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/bl_address"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="plan"
-                android:textSize="15sp"/>
-            <TextView
-                android:id="@+id/bl_group"
-                android:textColor="@color/black"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="plan"
-                android:textSize="15sp"/>
+                android:textSize="20sp"/>
+
             <TextView
                 android:id="@+id/bl_sex"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="plan"
-                android:textSize="15sp"/>
+                android:textSize="20sp"/>
             <TextView
                 android:id="@+id/bl_division"
                 android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="plan"
-                android:textSize="15sp"/>
+                android:textSize="20sp"/>
 
 
 

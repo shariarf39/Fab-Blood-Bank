@@ -2,6 +2,8 @@ package com.example.fabred;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,6 +25,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -48,6 +52,7 @@ public class Home extends AppCompatActivity {
     EditText s2d_date, s2d_notice;
     Button s2d_upload, noti;
     ProgressBar s2d_progress;
+
     ListView s2d_listview;
     TextView notis;
 
@@ -63,6 +68,7 @@ public class Home extends AppCompatActivity {
         s2d_listview = findViewById(R.id.s2d_plan_listview);
         s2d_progress = findViewById(R.id.s2d_progress);
         notis = findViewById(R.id.noti);
+
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
@@ -176,6 +182,8 @@ public class Home extends AppCompatActivity {
             TextView group =myview.findViewById(R.id.bl_group);
             TextView sex =myview.findViewById(R.id.bl_sex);
             TextView division =myview.findViewById(R.id.bl_division);
+            ImageView call =myview.findViewById(R.id.call);
+
          //  TextView tvcomment =myview.findViewById(R.id.tvcomment);
 
             hashMap = arrayList.get(position);
@@ -188,13 +196,23 @@ public class Home extends AppCompatActivity {
             String g_sex = hashMap.get("sex");
             String g_division = hashMap.get("division");
 
+            call.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", plan, null));
+                    startActivity(intent);
+                }
+            });
+
 
             // tvid.setText(id);
             name.setText(names);
+            group.setText("Blood Group: "+g_group);
             phone.setText(plan);
             email.setText(g_email);
             address.setText(g_address);
-            group.setText(g_group);
+
             sex.setText(g_sex);
             division.setText(g_division);
             //  tvcomment.setText(comment);
