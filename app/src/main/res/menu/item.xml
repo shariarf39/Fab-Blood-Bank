@@ -24,13 +24,13 @@
 
 
     <item android:id="@+id/menu_contact"
-        android:title="University Info"
+        android:title="Near By Hospital"
 
 
         >
     </item>
     <item android:id="@+id/nub_blood"
-        android:title="NUB Blood Bank"
+        android:title="Blood Bank"
 
 
         >

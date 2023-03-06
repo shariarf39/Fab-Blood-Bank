@@ -22,9 +22,8 @@
                 android:id="@+id/profile_image"
                 android:layout_width="75dp"
                 android:layout_height="75dp"
-                android:src="@drawable/ic_launcher_background"
 
-
+                android:background="@drawable/image_cercle"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="10dp"
@@ -34,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="NUB"
+                android:text="Blood Red"
                 android:textColor="@color/white"
 
                 android:textSize="24sp"
@@ -45,7 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="Northern University Bangladesh"
+                android:text="Team Fab Four"
                 android:textColor="@color/white"
                 android:layout_marginLeft="10dp"
 
@@ -54,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="https://nub.ac.bd/"
+                android:text="Shariarf39@gmail.com"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginLeft="10dp"

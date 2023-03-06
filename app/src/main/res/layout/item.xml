@@ -78,7 +78,7 @@
                     android:id="@+id/call"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/baseline_call_24"
+                    android:src="@drawable/baseline_add_ic_call_24"
                     android:paddingRight="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_alignParentRight="true"
