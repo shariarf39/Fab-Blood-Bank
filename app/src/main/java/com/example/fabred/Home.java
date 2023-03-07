@@ -159,7 +159,9 @@ public class Home extends AppCompatActivity {
                         break;
                     case R.id.menu_contact:
                         drawerLayout.closeDrawer(GravityCompat.START);
-                        Toast.makeText(getApplicationContext(),"University Info",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(),"Near By Hospital open",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Home.this, Hospital_Map.class);
+                        startActivity(intent);
 
 
 

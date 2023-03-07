@@ -24,7 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00D32F2F"
-            app:title="Fab Red"
+            app:title="Blood Bank"
             android:id="@+id/toolbar"
             >
         </androidx.appcompat.widget.Toolbar>
