@@ -7,7 +7,7 @@
     tools:context=".Home"
 
 
-    android:background="#da8ee7"
+    android:background="#2C3E50"
 
     android:id="@+id/drawer"
     tools:openDrawer="start"

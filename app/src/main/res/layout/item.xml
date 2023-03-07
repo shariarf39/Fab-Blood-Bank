@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        app:neumorph_shadowColorDark="#2DEF1212"
+        app:neumorph_shadowColorDark="#85929E"
         app:neumorph_shadowColorLight="#5CE7ECF1"
 
         >
@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="7dp"
+            android:background="#2C3E50"
             >
 
 
