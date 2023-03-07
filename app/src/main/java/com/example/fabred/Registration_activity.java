@@ -63,6 +63,12 @@ public class Registration_activity extends AppCompatActivity {
         blood_select.setAdapter(arrayAdapter);
         devison.setAdapter(arrayAdapters);
         sex_select.setAdapter(sex);
+
+
+
+
+
+
         idBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,7 +87,7 @@ public class Registration_activity extends AppCompatActivity {
 
                 //////////////
               String names = name.getText().toString();
-              String phones = phone. getText().toString();
+                String phones = phone. getText().toString();
               String emails = email.getText().toString();
               String addresss = address.getText().toString();
               String passwords = password.getText().toString();

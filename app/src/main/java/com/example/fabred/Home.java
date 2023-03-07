@@ -28,6 +28,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +36,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -73,12 +75,19 @@ public class Home extends AppCompatActivity {
     ListView s2d_listview;
     TextView notis;
 
+    SearchView searchView;
+
+
+
     SharedPreferences sharedPreferences;
     SharedPreferences.Editor editor;
 
     HashMap <String, String> hashMap;
     NavigationView nav;
     ArrayList<HashMap<String, String>> arrayList = new ArrayList<>();
+    ArrayAdapter<String> adapter;
+
+    String[] name;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -89,6 +98,8 @@ public class Home extends AppCompatActivity {
 
 
         s2d_listview = findViewById(R.id.s2d_plan_listview);
+        searchView = findViewById(R.id.searchView);
+
         s2d_progress = findViewById(R.id.s2d_progress);
         nav = findViewById(R.id.navmenu);
 
@@ -213,11 +224,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
+///////////
 
 
         //////////
@@ -247,6 +254,9 @@ public class Home extends AppCompatActivity {
             public void onResponse(JSONArray response) {
                 s2d_progress.setVisibility(View.GONE);
 
+
+
+
                 for (int x=0; x < response.length();  x++){
                     try {
                         JSONObject jsonObject = response.getJSONObject(x);
@@ -259,6 +269,8 @@ public class Home extends AppCompatActivity {
                         String groupe = jsonObject.getString("blood_group");
                         String sexe = jsonObject.getString("sex");
                         String divisione = jsonObject.getString("division");
+
+
 
 
 
@@ -275,6 +287,8 @@ public class Home extends AppCompatActivity {
 
                         arrayList.add(hashMap);
 
+
+
                     } catch (JSONException e) {
                         throw new RuntimeException(e);
                     }
@@ -283,7 +297,11 @@ public class Home extends AppCompatActivity {
                 if (arrayList.size()>0){
                     Home.Myadapter myadapter = new Home.Myadapter();
                     s2d_listview.setAdapter(myadapter);
+
+
+
                 }
+
 
             }
         }, new Response.ErrorListener() {
@@ -293,15 +311,22 @@ public class Home extends AppCompatActivity {
 
             }
         });
+
+
+
         requestQueue.add(jsonArrayRequest);
         ////////////////////////////////////////////
 
 
-
         ////////////////////////////////////////////
 
 
+
+
     }
+
+
+
 
 
     public class Myadapter extends BaseAdapter {
@@ -310,6 +335,8 @@ public class Home extends AppCompatActivity {
         public int getCount() {
             return arrayList.size();
         }
+
+
 
         @Override
         public Object getItem(int i) {

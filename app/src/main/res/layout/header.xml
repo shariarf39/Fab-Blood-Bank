@@ -34,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif"
-                android:text="NUB"
+                android:text="Fab Red"
                 android:textColor="@color/white"
 
                 android:textSize="24sp"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="Northern University Bangladesh"
+                android:text="Sponsor By NUB-CC"
                 android:textColor="@color/white"
                 android:layout_marginLeft="10dp"
 

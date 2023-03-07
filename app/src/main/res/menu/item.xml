@@ -7,7 +7,7 @@
 
 
     <item android:id="@+id/menu_home"
-        android:title="Home"
+        android:title="Profie"
 
 
         >
@@ -24,7 +24,7 @@
 
 
     <item android:id="@+id/menu_contact"
-        android:title="University Info"
+        android:title="Hospital"
 
 
         >

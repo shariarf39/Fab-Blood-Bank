@@ -37,52 +37,18 @@
 
     >
 
-
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/e1"
-        android:layout_below="@+id/login"
+    <SearchView
+        android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search"
-        app:boxStrokeColor="#4A000000"
-        app:hintTextColor="@color/black"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginStart="6dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-
-
-        >
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/nub_id"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:inputType="textEmailAddress"
-            android:gravity="top"
-            android:overScrollMode="always"
-
-            android:scrollbarStyle="insideInset"
-            android:scrollHorizontally="false"
-
-            android:textColorHint="#F5000000"
-            android:padding="5dp"
-            android:textColor="@color/black"
-            android:textSize="25dp"
-
-
-            >
-
-        </com.google.android.material.textfield.TextInputEditText>
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/baseline_search_24"
-        android:paddingLeft="20dp"
+        android:queryHint="Search Here"
+        android:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"
         />
+
+
+
+
 
 
 
