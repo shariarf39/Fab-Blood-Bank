@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:background="#EC0D0D"
-                android:text="Donner List"
+                android:text="Request List"
                 android:textColor="@color/white"
                 android:gravity="center"
                 />
@@ -76,25 +76,25 @@
 
                     >
 
-            <TextView
+                    <TextView
 
-                android:id="@+id/tvplan"
-                android:textColor="@color/black"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Phone"
-                android:textSize="20sp"/>
+                        android:id="@+id/tvplan"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:textSize="20sp"/>
 
 
-                <ImageView
-                    android:id="@+id/call"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/baseline_add_ic_call_24"
-                    android:paddingRight="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_alignParentRight="true"
-                    />
+                    <ImageView
+                        android:id="@+id/call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_add_ic_call_24"
+                        android:paddingRight="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_alignParentRight="true"
+                        />
                 </RelativeLayout>
             </LinearLayout>
 

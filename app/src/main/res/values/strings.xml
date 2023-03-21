@@ -2,6 +2,8 @@
     <string name="app_name">Fab Red</string>
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="website_link">https://ambulanceservicebangladesh.com/</string>
+
 
     <string-array name="blood_group">
         <item>A+</item>
@@ -30,7 +32,7 @@
     <string-array name="sex">
         <item>Male</item>
         <item>Female</item>
-        <item>Custoom</item>
+        <item>Custom</item>
 
 
     </string-array>

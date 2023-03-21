@@ -255,7 +255,7 @@ public class Log_in extends AppCompatActivity {
         registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Log_in.this, Registration_activity.class);
+                Intent intent = new Intent(Log_in.this, Registration.class);
                 startActivity(intent);
             }
         });

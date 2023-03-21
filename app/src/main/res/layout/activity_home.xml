@@ -7,7 +7,7 @@
     tools:context=".Home"
 
 
-    android:background="#2C3E50"
+    android:background="#85D60C0C"
 
     android:id="@+id/drawer"
     tools:openDrawer="start"
@@ -18,62 +18,410 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/white"
         >
 
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00D32F2F"
             app:title="Blood Bank"
             android:id="@+id/toolbar"
+            app:titleTextColor="@color/black"
+            android:background="#9AC50C0C"
+
             >
         </androidx.appcompat.widget.Toolbar>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_below="@+id/toolbar"
-    android:padding="5dp"
 
-    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:queryHint="Search Here"
-        android:iconifiedByDefault="false"
-        android:layout_alignParentTop="true"
-        />
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_below="@+id/n"
+                    >
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+                            android:id="@+id/blood_req"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/im_cse"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/request"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Request"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+                            android:id="@+id/feed"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/feed"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Feed"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+                            android:id="@+id/donner_map"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/map"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Map"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+                            android:id="@+id/blood_donner"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/donner"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Donner"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_below="@+id/n"
+                    >
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+                            android:id="@+id/blood_amb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ambulence"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ambulance"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/disease"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Tha"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/org"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Org"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                    <soup.neumorphism.NeumorphCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:neumorph_shadowColorDark="#2DEF1212"
+                        app:neumorph_shadowColorLight="#5CE7ECF1"
+                        >
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/about"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About"
+                                android:textColor="@color/black"
+                                android:layout_below="@+id/cse"
+                                android:gravity="center"
+                                />
+                        </LinearLayout>
+                    </soup.neumorphism.NeumorphCardView>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/blood_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/l1"
+                    android:src="@drawable/plash_logo"
+                    android:layout_marginTop="40dp"
+
+                    />
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_below="@+id/blood_img"
+                >
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:neumorph_shadowColorDark="#2DEF1212"
+                    app:neumorph_shadowColorLight="#5CE7ECF1"
+                    >
+                    <LinearLayout
+                        android:id="@+id/help_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <ImageView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/help"
+                            />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Help Line"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+
+                            />
+                    </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:neumorph_shadowColorDark="#2DEF1212"
+                    app:neumorph_shadowColorLight="#5CE7ECF1"
+                    >
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/volentueer"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Volunter"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/cse"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
+            </LinearLayout>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:neumorph_shadowColorDark="#2DEF1212"
+                    app:neumorph_shadowColorLight="#5CE7ECF1"
+                    >
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Facts"
+                            android:textSize="50dp"
+                            android:textColor="@color/black"
+                            android:layout_below="@+id/cse"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </soup.neumorphism.NeumorphCardView>
 
 
 
 
 
 
-
-    <ProgressBar
-        android:id="@+id/s2d_progress"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
+            </LinearLayout>
 
 
+        </ScrollView>
 
-
-        />
-
-    <ListView
-        android:id="@+id/s2d_plan_listview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-
-        />
-
-
-</LinearLayout>
     </RelativeLayout>
+
+
 
 
 
@@ -87,6 +435,7 @@
         app:headerLayout="@layout/header"
         android:layout_gravity="start"
         android:background="#BC1976D2"
+
 
 
         >

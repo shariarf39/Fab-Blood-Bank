@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     android:background="#E1DC1F1F"
-  >
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,7 +26,7 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center_horizontal"
                 android:padding="5dp"
-                android:text="Welcome \nBlood Request"
+                android:text="Welcome \nRegistration"
                 android:textAlignment="center"
                 android:textColor="@color/purple_700"
                 android:textSize="18sp"
@@ -146,9 +146,9 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/t1"
                 android:layout_width="match_parent"
-                android:layout_below="@id/sinpper"
+                android:layout_below="@id/t6"
                 android:layout_height="wrap_content"
-
+                app:passwordToggleEnabled="true"
                 android:background="#00000000"
                 app:boxStrokeColor="#4A000000"
                 app:hintTextColor="@color/black"
@@ -167,110 +167,23 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="10dp"
-                    android:hint="      Problem"
+                    android:hint="      Password"
                     android:inputType="text"
-  />
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/sinpper"
-                android:layout_width="match_parent"
-                android:layout_below="@id/t6"
-                android:layout_height="80dp"
 
-                android:background="#00000000"
-                app:boxStrokeColor="#4A000000"
-                app:hintTextColor="@color/black"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                >
-
-            <LinearLayout
-
-
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:orientation="vertical"
-                android:weightSum="3"
-                android:background="#45FFFFFF"
-                android:layout_margin="10dp"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Select Option: "
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-
-                    />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:background="#BEDC1F1F"
-
-                    >
-
-                <Spinner
-                    android:id="@+id/bloodgroup"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-
-                    />
-                <Spinner
-                    android:id="@+id/sex_select"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-
-                    />
-                <Spinner
-                    android:id="@+id/devison"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-
-                    />
-            </LinearLayout>
-            </LinearLayout>
-            </com.google.android.material.textfield.TextInputLayout>
 
 
             <!--button to register our new user-->
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/t2"
-                android:layout_width="match_parent"
-                android:layout_below="@id/t1"
-                android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true"
-                app:boxStrokeColor="#4A000000"
-                app:hintTextColor="@color/black"
-                android:background="#00000000"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                >
-                <EditText
-                    android:id="@+id/idEdtConfromPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="10dp"
-                    android:hint="      Hospital Name"
-                    android:inputType="textPassword"
-                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
 
             <!--button to register our new user-->
             <Button
                 android:id="@+id/idBtnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/t2"
+                android:layout_below="@id/t1"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
